@@ -1,0 +1,98 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+html header {
+  background-color: #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html header div .logo {
+  padding: 0px 35px 0px 35px;
+  margin: 20px 0;
+  border-right: 2px solid #22bce0;
+}
+html header div img {
+  height: 85px;
+}
+html header div .encabezado {
+  margin: 10px 0;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html header div .encabezado .titulo {
+  color: #fff;
+}
+html header div .encabezado .clase {
+  color: #fff;
+  margin-top: 5px;
+}
+html header div .encabezado .clase h2 {
+  font-size: 18px;
+}
+html header div .encabezado .clase h3 {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  color: #22bce0;
+}
+html header div .encabezado .fuente {
+  color: #fff;
+  display: flex;
+  margin-top: 5px;
+  align-items: first baseline;
+}
+html header div .encabezado .fuente p {
+  margin-right: 5px;
+  color: #dd4f24;
+}
+html header div .encabezado .fuente p:first-child {
+  font-size: 12px;
+}
+html header div .encabezado .fuente p:last-child {
+  font-size: 20px;
+}
+html header div .avatar-publicar {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  border-radius: 50%;
+}
+html header div .avatar-publicar .avatar {
+  display: flex;
+  align-items: center;
+}
+html header div .avatar-publicar .avatar .menu {
+  color: #fff;
+  height: fit-content;
+  padding: 5px 8px;
+  margin-left: -5px;
+  z-index: 1;
+  background-color: #dd4f24;
+}
+html header div .avatar-publicar .avatar .img-avatar {
+  z-index: 20;
+}
+html header div .avatar-publicar .avatar .img-avatar img {
+  height: 80px;
+  border-radius: 50%;
+}
+html header div .avatar-publicar * {
+  height: fit-content;
+}
+html header div .avatar-publicar .btn {
+  background-color: #dd4f24;
+  padding: 5px 30px;
+  margin-right: -5px;
+  z-index: 1;
+}
+html header div .avatar-publicar .btn p {
+  color: #fff;
+  font-style: italic;
+}
+html div:first-child {
+  display: flex;
+  align-items: center;
+}
