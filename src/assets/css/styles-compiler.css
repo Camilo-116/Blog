@@ -2,18 +2,21 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 html header {
-  background-color: #444;
+  background: #444;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2);
+}
+html header div:first-child {
+  display: flex;
 }
 html header div .logo {
-  padding: 0px 35px 0px 35px;
-  margin: 20px 0;
+  padding: 0 35px;
   border-right: 2px solid #22bce0;
+  margin: 10px 0;
 }
-html header div img {
-  height: 85px;
+html header div .logo img {
+  height: 100px;
 }
 html header div .encabezado {
   margin: 10px 0;
@@ -22,30 +25,31 @@ html header div .encabezado {
   flex-direction: column;
   justify-content: center;
 }
-html header div .encabezado .titulo {
+html header div .encabezado .titulo,
+html header div .encabezado .clase,
+html header div .encabezado .fuente {
   color: #fff;
+}
+html header div .encabezado .titulo h2 {
+  font-size: 18px;
 }
 html header div .encabezado .clase {
-  color: #fff;
   margin-top: 5px;
-}
-html header div .encabezado .clase h2 {
-  font-size: 18px;
 }
 html header div .encabezado .clase h3 {
   font-size: 14px;
   font-style: italic;
-  font-weight: bold;
   color: #22bce0;
+  font-weight: bold;
 }
 html header div .encabezado .fuente {
-  color: #fff;
   display: flex;
   margin-top: 5px;
   align-items: first baseline;
 }
 html header div .encabezado .fuente p {
   margin-right: 5px;
+  cursor: pointer;
   color: #dd4f24;
 }
 html header div .encabezado .fuente p:first-child {
@@ -54,45 +58,100 @@ html header div .encabezado .fuente p:first-child {
 html header div .encabezado .fuente p:last-child {
   font-size: 20px;
 }
-html header div .avatar-publicar {
+html header .avatar-publicar {
   display: flex;
   align-items: center;
-  height: 80px;
-  border-radius: 50%;
+  margin-right: 30px;
 }
-html header div .avatar-publicar .avatar {
+html header .avatar-publicar .avatar {
   display: flex;
   align-items: center;
 }
-html header div .avatar-publicar .avatar .menu {
-  color: #fff;
-  height: fit-content;
-  padding: 5px 8px;
-  margin-left: -5px;
-  z-index: 1;
-  background-color: #dd4f24;
-}
-html header div .avatar-publicar .avatar .img-avatar {
-  z-index: 20;
-}
-html header div .avatar-publicar .avatar .img-avatar img {
-  height: 80px;
-  border-radius: 50%;
-}
-html header div .avatar-publicar * {
-  height: fit-content;
-}
-html header div .avatar-publicar .btn {
-  background-color: #dd4f24;
-  padding: 5px 30px;
+html header .avatar-publicar .avatar .img-avatar {
   margin-right: -5px;
   z-index: 1;
 }
-html header div .avatar-publicar .btn p {
+html header .avatar-publicar .avatar .img-avatar img {
+  height: 50px;
+  border-radius: 50%;
+}
+html header .avatar-publicar .avatar .menu {
+  background: #dd4f24;
+  height: fit-content;
+  padding: 5px 5px 5px 10px;
+}
+html header .avatar-publicar .avatar .menu p {
+  color: #fff;
+}
+html header .avatar-publicar .btn {
+  background: #dd4f24;
+  padding: 5px 30px;
+  margin-right: -5px;
+}
+html header .avatar-publicar .btn p {
   color: #fff;
   font-style: italic;
 }
-html div:first-child {
+html nav {
+  padding: 15px 0;
+  padding-left: 20px;
+  background: #22bce0;
+}
+html nav ul {
   display: flex;
   align-items: center;
+}
+html nav ul li {
+  margin-right: 35px;
+  box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
+}
+html nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+html nav ul li a:hover {
+  color: rgba(0,0,0,0.2);
+}
+html section article {
+  width: 45%;
+  border: 1px solid #f00;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 1px 5px 3px 1px rgba(0,0,0,0.5);
+}
+html section article .contenido {
+  display: flex;
+  border-bottom: 3px solid #22bce0;
+}
+html section article .puntuacion {
+  display: flex;
+  justify-content: space-between;
+  height: max-content;
+}
+html footer {
+  background: #dd4f24;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+html footer div {
+  display: inherit;
+  width: min-content;
+}
+html footer div p {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  color: rgba(255,255,255,0.5);
+  font-weight: bold;
+}
+html footer div p span {
+  font-weight: normal;
+}
+html footer div p span::before {
+  content: "- ";
+}
+html footer div p span::after {
+  content: " -";
 }
