@@ -118,24 +118,47 @@ html header .avatar-publicar .avatar .menu p span::before {
   font-size: 2rem;
   content: "\e900";
 }
-html nav {
+html .barra-navegacion {
+  display: flex;
+  position: relative;
+}
+html .barra-navegacion .figura {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  margin: 0;
+}
+html .barra-navegacion .figura .rectangulo {
+  background-color: #fff;
+  height: 100%;
+  width: 20px;
+}
+html .barra-navegacion .figura .triangulo {
+  width: 0;
+  height: 0;
+  border-left: 10px solid #fff;
+  border-top: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+}
+html .barra-navegacion nav {
   padding: 15px 0;
-  padding-left: 20px;
+  padding-left: 35px;
+  flex-grow: 1;
   background: #22bce0;
 }
-html nav ul {
+html .barra-navegacion nav ul {
   display: flex;
   align-items: center;
 }
-html nav ul li {
+html .barra-navegacion nav ul li {
   margin-right: 35px;
   box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
 }
-html nav ul li a {
+html .barra-navegacion nav ul li a {
   color: #fff;
   text-decoration: none;
 }
-html nav ul li a:hover {
+html .barra-navegacion nav ul li a:hover {
   color: rgba(0,0,0,0.2);
 }
 html body {

@@ -97,22 +97,41 @@ html
                                 font-family: "Icons"
                                 font-size: 2rem
                                 content: "\e900"
-    
-    nav 
-        padding: 15px 0
-        padding-left: 20px
-        background: #22bce0
-        ul 
+    .barra-navegacion
+        display: flex
+        position: relative
+        .figura
+            position: absolute
             display: flex
-            align-items: center
-            li 
-                margin-right: 35px
-                box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1)
-                a
-                    color: white
-                    text-decoration: none
-                    &:hover
-                        color: rgba(0,0,0,0.2)
+            height: 100%
+            margin: 0
+            .rectangulo
+                background-color: white
+                height: 100%
+                width 20px
+            .triangulo
+                width: 0;
+                height: 0;
+                border-left: 10px solid white;
+                border-top: 24px solid transparent;
+                border-bottom: 24px solid transparent;
+
+        nav 
+            padding: 15px 0
+            padding-left: 35px
+            flex-grow: 1
+            background: #22bce0
+            ul 
+                display: flex
+                align-items: center
+                li 
+                    margin-right: 35px
+                    box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1)
+                    a
+                        color: white
+                        text-decoration: none
+                        &:hover
+                            color: rgba(0,0,0,0.2)
     body
         background-color: #E7E7E7
         section 
